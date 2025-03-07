@@ -1,0 +1,121 @@
+.extraOutline {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.file_upload {
+    border-width: 2px;
+    border-style: dashed;
+}
+
+.no-select {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#removeAllVideosBtn,
+#removeAllImagesBtn {
+    text-decoration: underline;
+    color: red;
+    cursor: pointer;
+    display: none;
+}
+
+#atributeSelectForm {
+    width: 200px;
+}
+
+.cspt {
+    cursor: pointer;
+}
+
+.csmv {
+    cursor: move;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#baseProduct {
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    max-height: none;
+    opacity: 1;
+    overflow: hidden;
+}
+
+#baseProduct.hidden {
+    max-height: 0;
+    opacity: 0;
+}
+
+.hoverTextBlack:hover {
+    color: black;
+}
+
+.customSelectExistingAttributeValues>.ss-main {
+    padding: 7px;
+}
+
+.disabledButton {
+    color: #a7aaad !important;
+    background: #f6f7f7 !important;
+    border-color: #dcdcde !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    cursor: default;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+.no-bullet {
+    list-style-type: none;
+}
+
+.container-spinner {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    position: fixed;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(147, 137, 137, 0.5);
+    /* Màu nền tối với độ trong suốt 50% */
+    z-index: 1;
+}
+
+#loadingSpinner {
+    position: relative;
+    z-index: 2;
+    opacity: 1 !important;
+}
+
+/* Cuộn chuột */
+.scroll-container,
+.category-scroll-container,
+.brand-scroll-container {
+    position: relative;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.attribute-scroll-container,
+.variation-scroll-container {
+    position: relative;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.ps__rail-y {
+    z-index: 100;
+}

@@ -1,0 +1,23 @@
+.no-select {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.cspt {
+    cursor: pointer;
+}
+
+.color-of-theme {
+    color: #cca270;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.li_sub_total {
+    align-items: normal !important;
+}
+

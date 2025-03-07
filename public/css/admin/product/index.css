@@ -1,0 +1,40 @@
+th,
+td {
+    text-align: center;
+}
+
+.cspt {
+    cursor: pointer;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+.no-select {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/* .scroll-x {
+    overflow-x: auto;
+    scrollbar-color: transparent transparent;
+}
+
+.scroll-x::-webkit-scrollbar {
+    display: none;
+} */
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-13 {
+    font-size: 13px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}

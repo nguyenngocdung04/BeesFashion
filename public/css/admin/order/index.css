@@ -1,0 +1,455 @@
+.status-tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+/* Khi tab được hover */
+.status-tab:hover {
+    background-color: #f0f0f0;
+}
+
+/* Khi tab có lớp active */
+.status-tab.active {
+    border-bottom: 3px solid #007bff;
+    /* Đường gạch chân dưới tab */
+    color: #007bff;
+    /* Thay đổi màu chữ nếu cần */
+}
+
+/* Ẩn tất cả các nội dung tab khi không chọn */
+.tab-content {
+    display: none;
+}
+
+/* Hiển thị nội dung khi tab được chọn */
+.tab-content.active {
+    display: block;
+}
+
+.badge {
+    font-size: 0.75rem;
+    color: #007bff;
+    background-color: #e9ecef;
+    padding: 0.2rem 0.6rem;
+    border-radius: 10px;
+    margin-left: 8px;
+}
+
+
+
+
+/* Tiêu đề và breadcrumb */
+.page-header {
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.page-title {
+    font-size: 24px;
+    color: #222;
+    font-weight: bold;
+}
+
+.breadcrumb {
+    margin-top: 5px;
+    list-style: none;
+    padding: 0;
+}
+
+.breadcrumb-item {
+    font-size: 14px;
+    color: #888;
+}
+
+.breadcrumb-item.active {
+    color: #333;
+}
+
+
+
+.text-header .truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text-footer {
+    font-weight: 500;
+    color: #555;
+}
+
+/* Product Information */
+.product-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.info-image {
+    width: 60px;
+    height: 60px;
+    background-color: #ddd;
+    border-radius: 8px;
+}
+
+.info-des {
+    flex-grow: 1;
+    padding: 0 15px;
+}
+
+.des-header {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.des-footer {
+    font-size: 12px;
+    color: #777;
+}
+
+.info-price {
+    text-align: right;
+}
+
+.price {
+    font-size: 14px;
+    font-weight: 600;
+    color: #f06292;
+}
+
+/* History Section */
+.list-history {
+    margin-top: 20px;
+}
+
+.listitem {
+    display: flex;
+    padding: 10px 10px;
+}
+
+.theme-arco-timeline-item-dot-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    position: relative;
+}
+
+.theme-arco-timeline-item-dot-line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    /* Độ dày của đường kẻ */
+    height: 100%;
+    /* Chiều cao của đường kẻ */
+    border-left: 1px dashed #888;
+    /* Tạo đường kẻ đứt */
+    transform: translateX(-50%);
+    /* Căn giữa đường kẻ */
+}
+
+/* Dấu chấm của timeline */
+.theme-arco-timeline-item-dot-custom.active {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #8e8e8e;
+    /* Màu xanh lá khi active */
+    border: 2px solid #fff;
+    /* Màu sắc viền */
+}
+
+
+/* Timeline content */
+.theme-arco-timeline-item-dot-content {
+    flex-grow: 1;
+}
+
+/* Texts for each step */
+.sc-jeGSBP {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+    color: #888;
+}
+
+/* Style cho khi trạng thái đơn hàng là đã hủy */
+.cancelled-order .theme-arco-timeline-item-dot-wrapper {
+    display: none;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .product-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info-image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .info-des {
+        padding: 0;
+    }
+
+    .info-price {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .listitem {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.completed-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px;
+    /* Adds space between the items */
+    justify-content: space-between;
+}
+
+.KeyValuePair {
+    width: 30%;
+    /* Each div takes up 30% of the row width */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.text-header .truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card {
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    padding: 10px;
+    font-size: 15px;
+    border-bottom: 2px solid #e5e5e5;
+    color: rgb(0, 0, 0);
+}
+
+.text-footer {
+    font-weight: 500;
+    color: #000000;
+}
+
+/* Make sure it's responsive for mobile */
+@media (max-width: 767px) {
+    .KeyValuePair {
+        width: 48%;
+        /* Reduce width to make them fit in 2 columns on small screens */
+    }
+}
+
+.index__card-title--rzIx0 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+}
+
+/* Thiết lập các đoạn văn bản */
+.font-regular {
+    font-weight: normal;
+}
+
+.text-base {
+    margin-top: 10px;
+}
+
+.text-gray-1 {
+    color: #333;
+}
+
+.text-gray-2 {
+    color: #555;
+}
+
+.text-gray-3 {
+    color: #777;
+}
+
+.text-neutral-text1 {
+    color: #111;
+}
+
+.text-neutral-text2 {
+    color: #666;
+}
+
+.text-neutral-text5 {
+    color: #aaa;
+}
+
+/* Căn chỉnh các mục trong card */
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.space-y-12 {
+    margin-bottom: 12px;
+}
+
+.space-y-8 {
+    margin-bottom: 8px;
+}
+
+/* Thanh chia giữa các phần */
+.bg-gray-line {
+    background-color: #e5e5e5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+/* Hiển thị dropdown */
+.PriceCard__DropDownBtnContainer-sc-mbai84-0 {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.theme-arco-icon {
+    margin-left: 5px;
+}
+
+.theme-arco-icon-down {
+    transition: transform 0.3s ease;
+}
+
+.PriceCard__DropDownBtnContainer-sc-mbai84-0:hover .theme-arco-icon-down {
+    transform: rotate(180deg);
+}
+
+/* Cấu trúc các dòng tổng tiền */
+.PriceCard__SubTotal-sc-mbai84-3 {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+
+.PriceCard__RowRight-sc-mbai84-6 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Các mục giá */
+.PriceCard__Total-sc-mbai84-2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Cấu trúc thông tin khách hàng */
+.ShippingAddress__AddressCard-sc-j8zs8s-0 {
+    background-color: #f7f7f7;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 12px;
+}
+
+.ShippingAddress__AddressDetailContainer-sc-j8zs8s-1 {
+    color: #555;
+}
+
+/* Thêm một số thuộc tính CSS cho các phần icon mắt */
+.theme-arco-icon-eye_invisible {
+    cursor: not-allowed;
+}
+
+/* Các thiết lập cho responsive */
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px);
+        /* 2 cột cho màn hình nhỏ */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        /* 1 cột cho màn hình rất nhỏ */
+    }
+}
+
+.order-status {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.status-circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+
+/* Circle colors based on status */
+.processing {
+    background-color: rgb(255, 181, 43);
+    /* Pending/processing order */
+}
+
+.pending {
+    background-color: rgb(255, 181, 43);
+}
+
+.shipped {
+    background-color: #007bff;
+}
+
+.completed {
+    background-color: #007bff;
+    /* Completed order */
+}
+
+.cancelled {
+    background-color: red;
+    /* Cancelled order */
+}
+
+.failed {
+    background-color: red;
+    /* Failed delivery */
+}

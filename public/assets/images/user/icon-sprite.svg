@@ -1,0 +1,6 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="zigzag" viewBox="0 0 100 20">
+        <polyline points="0,20 25,0 50,20 75,0 100,20" fill="none" stroke="#e27d5f" stroke-width="4"/>
+    </symbol>
+</svg>
